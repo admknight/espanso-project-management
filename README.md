@@ -63,6 +63,10 @@ Once installed, use the following commands to record and track project details:
     Trigger: `;extfin`  
     Record exterior work like siding, roofing, and landscaping.
 
+12. **All Commands**  
+    Trigger: `;pco`  
+    Show all commands.
+
 ---
 
 ## **Daily Logs**

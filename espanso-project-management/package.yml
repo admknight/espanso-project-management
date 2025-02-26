@@ -1,0 +1,228 @@
+# Construction Project Management - Espanso Package for Single/Multi-Family Residence (NJ)
+# This package will help you track and manage your construction projects efficiently.
+
+matches:
+  # Phase 1: Site Preparation
+  - regex: (?i);\bsiteprep\b
+    replace: |
+      Phase: Site Preparation
+      Date Started: [Date Started]
+      Tasks:
+        - [Task 1: Excavation]
+        - [Task 2: Clearing Debris]
+      Status: [Status of Work]
+      Notes: [Notes on Site Preparation]
+    label: Site Preparation Phase
+
+  # Phase 2: Foundation Work
+  - regex: (?i);\bfoundation\b
+    replace: |
+      Phase: Foundation Work
+      Date Started: [Date Started]
+      Status: [Foundation Progress]
+      Concrete Pour Date: [Concrete Pour Date]
+      Curing Period: [Curing Period]
+      Notes: [Additional Information]
+    label: Foundation Work Phase
+
+  # Phase 3: Framing
+  - regex: (?i);\bframing\b
+    replace: |
+      Phase: Framing
+      Date Started: [Date Started]
+      Status: [Framing Status]
+      Materials Used:
+        - [Material 1]
+        - [Material 2]
+      Inspection Date: [Inspection Date]
+      Notes: [Framing Updates]
+    label: Framing Phase
+
+  # Phase 4: Roofing
+  - regex: (?i);\broofing\b
+    replace: |
+      Phase: Roofing
+      Date Started: [Date Started]
+      Roof Type: [Roof Type]
+      Completion Date: [Completion Date]
+      Status: [Roofing Status]
+      Inspection Passed: [Yes/No]
+      Notes: [Roofing Updates]
+    label: Roofing Phase
+
+  # Phase 5: Plumbing
+  - regex: (?i);\bplumbing\b
+    replace: |
+      Phase: Plumbing
+      Date Started: [Date Started]
+      Plumber: [Plumber Name]
+      Completion Date: [Completion Date]
+      Status: [Plumbing Status]
+      Inspection Date: [Inspection Date]
+      Notes: [Plumbing Updates]
+    label: Plumbing Phase
+
+  # Phase 6: Electrical
+  - regex: (?i);\belectrical\b
+    replace: |
+      Phase: Electrical
+      Date Started: [Date Started]
+      Electrician: [Electrician Name]
+      Completion Date: [Completion Date]
+      Status: [Electrical Status]
+      Inspection Date: [Inspection Date]
+      Notes: [Electrical Updates]
+    label: Electrical Phase
+
+  # Phase 7: Subcontractor Work
+  - regex: (?i);\bsubcontractor\b
+    replace: |
+      Phase: Subcontractor Work
+      Subcontractor Name: [Subcontractor Name]
+      Task Assigned: [Assigned Task]
+      Completion Date: [Completion Date]
+      Performance Status: [Performance]
+      Notes: [Subcontractor Feedback]
+    label: Subcontractor Work Phase
+
+  # Phase 8: Procurement & Material Delivery
+  - regex: (?i);\bprocurement\b
+    replace: |
+      Phase: Procurement & Material Delivery
+      Date Ordered: [Date Ordered]
+      Expected Delivery: [Expected Delivery Date]
+      Actual Delivery: [Actual Delivery Date]
+      Status: [Delivery Status]
+      Materials Ordered:
+        - [Material 1: Quantity]
+        - [Material 2: Quantity]
+      Notes: [Material Delays, Shortages]
+    label: Procurement & Material Delivery Phase
+
+  # Phase 9: Safety & Inspections
+  - regex: (?i);\bsafety\b
+    replace: |
+      Phase: Safety & Inspections
+      Inspection Date: [Inspection Date]
+      Inspector: [Inspector Name]
+      Safety Violations: [Yes/No]
+      Compliance Status: [Compliant/Non-Compliant]
+      Notes: [Safety Details]
+    label: Safety & Inspections Phase
+
+  # Phase 10: Project Closeout
+  - regex: (?i);\bcloseout\b
+    replace: |
+      Phase: Project Closeout
+      Completion Date: [Completion Date]
+      Final Inspection: [Yes/No]
+      Client Feedback: [Client Feedback]
+      Final Sign-Off: [Yes/No]
+      Notes: [Final Notes, Issues to Address]
+    label: Project Closeout Phase
+
+  # Phase 11: Interior Finishes
+  - regex: (?i);\bintfin\b
+    replace: |
+      Phase: Interior Finishes
+      Date Started: [Date Started]
+      Progress: [Interior Finishes Progress]
+      Completion Date: [Completion Date]
+      Materials Used:
+        - [Material 1]
+        - [Material 2]
+      Inspection Date: [Inspection Date]
+
+      # Activities
+      Activities:
+        - Drywall Installation: [Ongoing/Completed]  # Drywall Hung is part of this
+        - Tile Work: [Ongoing/Completed]
+        - Hardwood Flooring: [Ongoing/Completed]
+        - Painting: [Ongoing/Completed]
+        - Trim and Molding: [Ongoing/Completed]
+        - Cabinet Installation: [Ongoing/Completed]
+        - Countertop Installation: [Ongoing/Completed]
+        - Door Hanging: [Ongoing/Completed]
+        - Baseboard Installation: [Ongoing/Completed]
+        - Window Installation: [Ongoing/Completed]
+        - Flooring Installation (Carpet/Tile/Other): [Ongoing/Completed]
+        - Interior Painting: [Ongoing/Completed]  # Added interior painting as a task
+        - Drywall Finishing: [Ongoing/Completed]  # Drywall finishing is part of the drywall task
+        - Ceiling Finishes: [Ongoing/Completed]  # Added ceiling finishes (suspended ceilings, etc.)
+        - Wallpapering: [Ongoing/Completed]  # Added wallpapering, if applicable
+        - Final Touch Ups: [Ongoing/Completed]  # Touch-ups on trim, walls, etc.
+
+      Notes: [Interior Finishes Updates]
+    label: Interior Finishes Phase
+
+  # Phase 12: Exterior Finishes
+  - regex: (?i);\bextfin\b
+    replace: |
+      Phase: Exterior Finishes
+      Date Started: [Date Started]
+      Progress: [Exterior Finishes Progress]
+      Completion Date: [Completion Date]
+      Materials Used:
+        - [Material 1]
+        - [Material 2]
+      Inspection Date: [Inspection Date]
+
+      # Activities
+      Activities:
+        - Exterior Painting: [Ongoing/Completed]
+        - Siding Installation: [Ongoing/Completed]
+        - Roofing Touch-Up: [Ongoing/Completed]
+        - Window Installation: [Ongoing/Completed]
+        - Door Installation: [Ongoing/Completed]
+        - Deck Building: [Ongoing/Completed]
+        - Exterior Trim Installation: [Ongoing/Completed]
+        - Driveway Paving: [Ongoing/Completed]
+        - Landscaping (Initial Phase): [Ongoing/Completed]
+        - Gutter Installation: [Ongoing/Completed]
+        - Fence Installation: [Ongoing/Completed]
+        - Exterior Lighting Installation: [Ongoing/Completed]  # Added exterior lighting for better coverage
+        - Walkways and Pathways: [Ongoing/Completed]  # Added walkways, if part of the construction project
+        - Final Grading and Drainage: [Ongoing/Completed]  # Added grading and drainage for exterior
+        - Final Touch Ups: [Ongoing/Completed]  # Final exterior touches after major work is completed
+
+      Notes: [Exterior Finishes Updates]
+    label: Exterior Finishes Phase
+
+  # Daily Logs
+  - regex: (?i);\bdls\b
+    replace: |
+      Date: [Date]
+      Weather Conditions: [Weather Conditions]
+      Site Conditions: [Site Conditions]
+      Tasks Performed:
+        - [Task 1]
+        - [Task 2]
+      Deliveries Received:
+        - [Delivery 1]
+        - [Delivery 2]
+      Inspections Completed:
+        - [Inspection 1]
+        - [Inspection 2]
+      Issues Identified: [Issues Identified]
+      Actions Taken: [Actions Taken]
+      Notes: [Additional Notes]
+    label: Daily Logs Phase
+
+  # Show all triggers
+  - regex: (?i);\bpco\b
+    replace: |
+      Available Triggers:
+      - ;siteprep - Site Preparation Phase
+      - ;foundation - Foundation Work Phase
+      - ;framing - Framing Phase
+      - ;roofing - Roofing Phase
+      - ;plumbing - Plumbing Phase
+      - ;electrical - Electrical Phase
+      - ;subcontractor - Subcontractor Work Phase
+      - ;procurement - Procurement & Material Delivery Phase
+      - ;safety - Safety & Inspections Phase
+      - ;closeout - Project Closeout Phase
+      - ;intfin - Interior Finishes Phase
+      - ;extfin - Exterior Finishes Phase
+      - ;dls - Daily Logs Phase
+    label: Command List

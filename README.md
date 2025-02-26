@@ -10,16 +10,6 @@ This Espanso package is designed for project managers in the construction indust
 - Easy-to-use triggers for quick project tracking.
 - Fully customizable to meet your project needs.
 
----
-
-## Installation
-1. Download and install [Espanso](https://espanso.org/).
-2. Create a new folder in your Espanso package directory.
-3. Paste the **`package.yml`** and **`_manifest.yml`** files into that folder.
-4. Restart Espanso.
-
----
-
 ## Usage
 
 Once installed, use the following commands to record and track project details:

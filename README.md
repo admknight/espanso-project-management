@@ -2,7 +2,7 @@
 *Author: admknight*
 
 ## Description
-This Espanso package is designed for project managers in the construction industry, specifically for managing single and multi-family residential projects in New Jersey. It covers all phases of the construction process from initial site preparation to project closeout, including daily logs, procurement, safety inspections, and much more. The package can be easily integrated into **Apple Notes** for easy sharing and tracking.
+This Espanso package is designed for project managers in the construction industry, specifically for managing single and multi-family residential projects. It covers all phases of the construction process from initial site preparation to project closeout, including daily logs, procurement, safety inspections, and much more. The package can be easily integrated into **Apple Notes** for easy sharing and tracking.
 
 ## Features
 - Track project phases such as **Foundation**, **Framing**, **Roofing**, **Plumbing**, **Electrical**, **Interior/Exterior Finishes**, etc.

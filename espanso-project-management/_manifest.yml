@@ -1,0 +1,34 @@
+---
+schema: "v2"
+name: "espanso-project-management"
+author: "admknight"
+version: "1.0.0"
+description: "Espanso package for managing construction projects, including phases, daily logs, safety, inspections, and more."
+mainfile: "package.yml"
+packs:
+  - name: "espanso-project-management"
+    description: "Manage construction projects, track progress, and document daily activities."
+    author: "admknight"
+    version: "1.0.0"
+    website: "https://espanso.org/"
+    license: "MIT"
+    contributors:
+      - "admknight"
+    triggers:
+      - ":siteprep"
+      - ":foundation"
+      - ":framing"
+      - ":roofing"
+      - ":plumbing"
+      - ":electrical"
+      - ":subcontractor"
+      - ":procurement"
+      - ":safety"
+      - ":closeout"
+      - ":interiorfinishes"
+      - ":exteriorfinishes"
+      - ":dailylogs"
+    support: 
+      - "espanso-issues@espanso.org"
+    dependencies: []
+    issues: []

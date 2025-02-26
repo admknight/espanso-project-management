@@ -16,57 +16,57 @@ Once installed, use the following commands to record and track project details:
 
 ### **Phase Tracking**
 1. **Site Preparation**  
-   Trigger: `:siteprep`  
+   Trigger: `;siteprep`  
    Inserts site preparation details, including tasks, status, and notes.
 
 2. **Foundation Work**  
-   Trigger: `:foundation`  
+   Trigger: `;foundation`  
    Records details about the foundation phase, including concrete pour and curing period.
 
 3. **Framing**  
-   Trigger: `:framing`  
+   Trigger: `;framing`  
    Tracks framing status and inspection dates.
 
 4. **Roofing**  
-   Trigger: `:roofing`  
+   Trigger: `;roofing`  
    For roofing progress, status, and inspection results.
 
 5. **Plumbing**  
-   Trigger: `:plumbing`  
+   Trigger: `;plumbing`  
    Track plumbing phase, plumber details, and inspection status.
 
 6. **Electrical**  
-   Trigger: `:electrical`  
+   Trigger: `;electrical`  
    Inserts electrical work status and inspection dates.
 
 7. **Subcontractor Work**  
-   Trigger: `:subcontractor`  
+   Trigger: `;subcontractor`  
    Record subcontractor tasks, performance, and feedback.
 
 8. **Procurement & Material Delivery**  
-   Trigger: `:procurement`  
+   Trigger: `;procurement`  
    Track ordered materials, delivery dates, and any issues.
 
 9. **Safety & Inspections**  
-   Trigger: `:safety`  
+   Trigger: `;safety`  
    Track safety inspections, violations, and compliance status.
 
 10. **Project Closeout**  
-    Trigger: `:closeout`  
+    Trigger: `;closeout`  
     Final project closeout details, including client feedback and sign-off.
 
 11. **Interior Finishes**  
-    Trigger: `:interiorfinishes`  
+    Trigger: `;intfin`  
     Track tasks like drywall installation, painting, and flooring.
 
 12. **Exterior Finishes**  
-    Trigger: `:exteriorfinishes`  
+    Trigger: `;extfin`  
     Record exterior work like siding, roofing, and landscaping.
 
 ---
 
 ## **Daily Logs**
-Trigger: `:dailylogs`  
+Trigger: `;dls`  
 A comprehensive daily log entry template that includes:
 - Weather and site conditions
 - Workforce on-site and contractor in charge
